@@ -1,0 +1,201 @@
+Program Version,EnergyPlus, Version 8.3.0-6d97d074ea, YMD=2021.04.14 23:16,IDD_Version 8.3.0
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=PITTSBURGH PA USA
+   **   ~~~   ** ..Weather File Location=SHANGHAI - CHN IWEC Data WMO#=583670
+   **   ~~~   ** ..due to location differences, Latitude difference=[9.19] degrees, Longitude difference=[201.35] degrees.
+   **   ~~~   ** ..Time Zone difference=[13.0] hour(s), Elevation difference=[98.20] percent, [381.00] meters.
+   ** Warning ** GetSurfaceData: WindowProperty:ShadingControl: "EXTERNAL_BLIND_CONTROL_1006" is not referenced by any window.
+   ** Warning ** CalcSurfaceCentroid: 38 Surfaces have the Z coordinate < 0.
+   **   ~~~   ** ...in any calculations, Wind Speed will be 0.0 for these surfaces.
+   **   ~~~   ** ...in any calculations, Outside temperatures will be the outside temperature + 9.750E-003 for these surfaces.
+   **   ~~~   ** ...that is, these surfaces will have conditions as though at ground level.
+   ** Warning ** CheckUsedConstructions: There are 7 nominally unused constructions in input.
+   **   ~~~   ** Each Unused construction is shown.
+   ************* Construction=GLASSASVIRTUALPARTITION
+   ************* Construction=LINEARBRIDGINGCONSTRUCTION
+   ************* Construction=FLOOR_SLAB_2
+   ************* Construction=SINGLE_LAYER_GLAZING_11
+   ************* Construction=SINGLE_LAYER_GLAZING_12
+   ************* Construction=SINGLE_LAYER_GLAZING_9
+   ************* Construction=WINDOW_FRAME_UIP0P49_MULL_17
+   ** Severe  ** InitConductionTransferFunctions: Found Material that is too thin and/or too highly conductive, material name = ALUMINIUM_2MM
+   **   ~~~   ** High conductivity Material layers are not well supported for internal source constructions, material conductivity = 230.000 [W/m-K]
+   **   ~~~   ** Material thermal diffusivity = 9.680E-005 [m2/s]
+   **   ~~~   ** Material with this thermal diffusivity should have thickness > 0.29516 [m]
+   ** Severe  ** InitConductionTransferFunctions: Found Material that is too thin and/or too highly conductive, material name = COPPER_2MM
+   **   ~~~   ** High conductivity Material layers are not well supported for internal source constructions, material conductivity = 200.000 [W/m-K]
+   **   ~~~   ** Material thermal diffusivity = 6.211E-005 [m2/s]
+   **   ~~~   ** Material with this thermal diffusivity should have thickness > 0.23643 [m]
+   ** Severe  ** InitConductionTransferFunctions: Found Material that is too thin and/or too highly conductive, material name = STEEL_5MM
+   **   ~~~   ** High conductivity Material layers are not well supported for internal source constructions, material conductivity = 45.000 [W/m-K]
+   **   ~~~   ** Material thermal diffusivity = 1.202E-005 [m2/s]
+   **   ~~~   ** Material with this thermal diffusivity should have thickness > 0.10401 [m]
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFS2".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFS3".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFS0".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFS4".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFN0".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFN3".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFN1".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFN2".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="SWOFF".
+   **   ~~~   ** Enforced reciprocity has tolerance (ideal is 0)=[5.162884E-003], Row Sum (ideal is 25)=[0.00].
+   **   ~~~   ** If zone is unusual, or tolerance is on the order of 0.001, view factors are probably OK.
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="LARGECONF".
+   **   ~~~   ** Enforced reciprocity has tolerance (ideal is 0)=[9.778904E-003], Row Sum (ideal is 21)=[0.00].
+   **   ~~~   ** If zone is unusual, or tolerance is on the order of 0.001, view factors are probably OK.
+   ** Severe  ** Check input.  Calc Pump Efficiency=533.33% which is bigger than 100%, for pump in radiant system NEOFF MULLION
+   ** Severe  ** Check input.  Calc Pump Efficiency=346.67% which is bigger than 100%, for pump in radiant system NWOFF MULLION
+   ** Severe  ** Check input.  Calc Pump Efficiency=231.11% which is bigger than 100%, for pump in radiant system LARGECONF MULLION
+   ** Severe  ** Check input.  Calc Pump Efficiency=533.33% which is bigger than 100%, for pump in radiant system SEOFF MULLION
+   ** Severe  ** Check input.  Calc Pump Efficiency=533.33% which is bigger than 100%, for pump in radiant system SWOFF MULLION
+   ** Warning ** Check input. Calc Pump Efficiency=21.67% which is less than 50%, for pump in radiant system NEOFF CHILLED CEILING
+   ** Warning ** Check input. Calc Pump Efficiency=21.67% which is less than 50%, for pump in radiant system CENTRAL CHILLED CEILING
+   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water SWOFF FAN COIL UNIT COOLING COIL
+   **   ~~~   ** no apparatus dew-point can be found for the initial entering and leaving conditions;
+   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
+   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
+   **   ~~~   ** The initial design conditions are: Tair,in = 23.9000
+   **   ~~~   **                                    Wair,in = 1.118000E-002
+   **   ~~~   **                                    Twater,in = 12.8000
+   **   ~~~   **                                    Tair,out = 18.0000
+   **   ~~~   **                                    Wair,out = 8.830000E-003
+   **   ~~~   ** The revised design conditions are: Tair,out = 15.4488
+   **   ~~~   **                                    Wair,out = 9.859948E-003
+   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water SEOFF FAN COIL UNIT COOLING COIL
+   **   ~~~   ** no apparatus dew-point can be found for the initial entering and leaving conditions;
+   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
+   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
+   **   ~~~   ** The initial design conditions are: Tair,in = 23.9000
+   **   ~~~   **                                    Wair,in = 1.118000E-002
+   **   ~~~   **                                    Twater,in = 12.8000
+   **   ~~~   **                                    Tair,out = 18.0000
+   **   ~~~   **                                    Wair,out = 8.830000E-003
+   **   ~~~   ** The revised design conditions are: Tair,out = 15.4488
+   **   ~~~   **                                    Wair,out = 9.859948E-003
+   ************* SizeDistrictHeating: Potential issue with equipment sizing for CMU DISTRICTHEATING
+   **   ~~~   ** User-Specified Nominal Capacity of 400000.00 [W]
+   **   ~~~   ** differs from Design Size Nominal Capacity of 186347.53 [W]
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ************* SizeDistrictCooling: Potential issue with equipment sizing for CMU DISTRICTCOOLING
+   **   ~~~   ** User-Specified Nominal Capacity of 100000.00 [W]
+   **   ~~~   ** differs from Design Size Nominal Capacity of 80498.00 [W]
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ** Warning ** RoomAirManager: Inconsistent ceiling heights in Zone: ROOFS1
+   **   ~~~   ** Lowest height=[4.120].
+   **   ~~~   ** Highest height=[5.420].
+   **   ~~~   ** Ceiling height=[0.706].
+   ** Warning ** RoomAirManager: Inconsistent ceiling heights in Zone: ROOFS2
+   **   ~~~   ** Lowest height=[4.120].
+   **   ~~~   ** Highest height=[5.420].
+   **   ~~~   ** Ceiling height=[0.706].
+   ** Warning ** RoomAirManager: Inconsistent ceiling heights in Zone: ROOFS3
+   **   ~~~   ** Lowest height=[4.120].
+   **   ~~~   ** Highest height=[5.420].
+   **   ~~~   ** Ceiling height=[0.706].
+   ** Warning ** RoomAirManager: Inconsistent ceiling heights in Zone: ROOFS0
+   **   ~~~   ** Lowest height=[4.120].
+   **   ~~~   ** Highest height=[5.420].
+   **   ~~~   ** Ceiling height=[0.707].
+   ** Warning ** RoomAirManager: Inconsistent ceiling heights in Zone: ROOFS4
+   **   ~~~   ** Lowest height=[4.120].
+   **   ~~~   ** Highest height=[5.420].
+   **   ~~~   ** Ceiling height=[0.705].
+   ** Warning ** RoomAirManager: Inconsistent ceiling heights in Zone: ROOFN0
+   **   ~~~   ** Lowest height=[4.120].
+   **   ~~~   ** Highest height=[5.420].
+   **   ~~~   ** Ceiling height=[0.744].
+   ** Warning ** RoomAirManager: Inconsistent ceiling heights in Zone: ROOFN3
+   **   ~~~   ** Lowest height=[4.120].
+   **   ~~~   ** Highest height=[5.420].
+   **   ~~~   ** Ceiling height=[0.723].
+   ** Warning ** RoomAirManager: Inconsistent ceiling heights in Zone: ROOFN1
+   **   ~~~   ** Lowest height=[4.120].
+   **   ~~~   ** Highest height=[5.420].
+   **   ~~~   ** Ceiling height=[0.734].
+   ** Warning ** RoomAirManager: Inconsistent ceiling heights in Zone: ROOFN2
+   **   ~~~   ** Lowest height=[4.120].
+   **   ~~~   ** Highest height=[5.420].
+   **   ~~~   ** Ceiling height=[0.734].
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.196E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 00:15 - 00:20
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.307E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 01:40 - 01:45
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.262E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 03:05 - 03:10
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.393E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 04:35 - 04:40
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.186E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 05:40 - 05:45
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.354E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 07:10 - 07:15
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.252E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 16:05 - 16:10
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.782E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 17:30 - 17:35
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.197E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 17:30 - 17:35
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.144E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 17:30 - 17:35
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.036E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 17:35 - 17:40
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.434E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 19:00 - 19:05
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.268E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 20:05 - 20:10
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.448E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 21:30 - 21:35
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =2.325E-003 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=WHOLEYEAR, at Simulation time=01/01 22:40 - 22:45
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "DOAS AHU UNITARY COOLING COIL DX COOLING COIL" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = 0.27 C.
+   **   ~~~   **  ...Occurrence info = WHOLEYEAR, 01/09 10:00 - 10:01
+   **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 16.869 C.
+   **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
+   **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
+   ** Severe  ** ExternalInterface: Received end of simulation flag at time = 744.00 hours.
+   ************* Simulation Error Summary *************
+   ************* There are 21 unused schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Warning ** Inside surface heat balance convergence problem continues
+   *************  **   ~~~   **   This error occurred 3770 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=6.319317E-003 [C]  Min=1.994613E-003 [C]
+   *************
+   *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="DOAS AHU UNITARY COOLING COIL DX COOLING COIL" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
+   *************  **   ~~~   **   This error occurred 237 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.995803  Min=-2.007619
+   *************
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Incomplete View factors
+   ************* ..Incomplete view factors can result from incorrect floor specifications (such as tilting 0
+   ************* ..instead of 180) or not enough surfaces in a zone to make an enclosure.  The error message
+   ************* ..also shows an enforced repciprocity value.  You can decide if you need to make geometry
+   ************* ..changes based on that value.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 4051 Warning; 9 Severe Errors; Elapsed Time=00hr 00min 44.18sec
