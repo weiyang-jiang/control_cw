@@ -45,6 +45,8 @@ while is_terminal == False:
     #  You should implement your control strategy here
     weekday = ob[2]
     hour = ob[0]
+    outdoor_temp = ob[3]
+    PWV = ob[9]
 
     # For all the weekends
     if weekday >= 5:
@@ -55,9 +57,16 @@ while is_terminal == False:
         # Before 7:00 AM or after 8:00 PM, step down the setpoint
         if hour < 7 or hour >= 20:
             act = 1
+            if PWV < -0.5:
+                act = 1
+            else:
+                act = 0
         # For other time, step up the setpoint
         else:
             act = 0
+
+
+
     # logger.info('This observation is: %s'%ob);
     ob, is_terminal, path_name = env.step([act])
     # Control strategy ends
