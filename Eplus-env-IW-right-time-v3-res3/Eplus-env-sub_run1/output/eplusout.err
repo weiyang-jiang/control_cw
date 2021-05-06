@@ -1,0 +1,86 @@
+Program Version,EnergyPlus, Version 8.3.0-6d97d074ea, YMD=2021.05.06 04:49,IDD_Version 8.3.0
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=PITTSBURGH PA USA
+   **   ~~~   ** ..Weather File Location=SHANGHAI - CHN IWEC Data WMO#=583670
+   **   ~~~   ** ..due to location differences, Latitude difference=[9.19] degrees, Longitude difference=[201.35] degrees.
+   **   ~~~   ** ..Time Zone difference=[13.0] hour(s), Elevation difference=[98.20] percent, [381.00] meters.
+   ** Warning ** GetSurfaceData: WindowProperty:ShadingControl: "EXTERNAL_BLIND_CONTROL_1006" is not referenced by any window.
+   ** Warning ** CalcSurfaceCentroid: 38 Surfaces have the Z coordinate < 0.
+   **   ~~~   ** ...in any calculations, Wind Speed will be 0.0 for these surfaces.
+   **   ~~~   ** ...in any calculations, Outside temperatures will be the outside temperature + 9.750E-003 for these surfaces.
+   **   ~~~   ** ...that is, these surfaces will have conditions as though at ground level.
+   ** Warning ** CheckUsedConstructions: There are 7 nominally unused constructions in input.
+   **   ~~~   ** Each Unused construction is shown.
+   ************* Construction=GLASSASVIRTUALPARTITION
+   ************* Construction=LINEARBRIDGINGCONSTRUCTION
+   ************* Construction=FLOOR_SLAB_2
+   ************* Construction=SINGLE_LAYER_GLAZING_11
+   ************* Construction=SINGLE_LAYER_GLAZING_12
+   ************* Construction=SINGLE_LAYER_GLAZING_9
+   ************* Construction=WINDOW_FRAME_UIP0P49_MULL_17
+   ** Severe  ** InitConductionTransferFunctions: Found Material that is too thin and/or too highly conductive, material name = ALUMINIUM_2MM
+   **   ~~~   ** High conductivity Material layers are not well supported for internal source constructions, material conductivity = 230.000 [W/m-K]
+   **   ~~~   ** Material thermal diffusivity = 9.680E-005 [m2/s]
+   **   ~~~   ** Material with this thermal diffusivity should have thickness > 0.29516 [m]
+   ** Severe  ** InitConductionTransferFunctions: Found Material that is too thin and/or too highly conductive, material name = COPPER_2MM
+   **   ~~~   ** High conductivity Material layers are not well supported for internal source constructions, material conductivity = 200.000 [W/m-K]
+   **   ~~~   ** Material thermal diffusivity = 6.211E-005 [m2/s]
+   **   ~~~   ** Material with this thermal diffusivity should have thickness > 0.23643 [m]
+   ** Severe  ** InitConductionTransferFunctions: Found Material that is too thin and/or too highly conductive, material name = STEEL_5MM
+   **   ~~~   ** High conductivity Material layers are not well supported for internal source constructions, material conductivity = 45.000 [W/m-K]
+   **   ~~~   ** Material thermal diffusivity = 1.202E-005 [m2/s]
+   **   ~~~   ** Material with this thermal diffusivity should have thickness > 0.10401 [m]
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFS2".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFS3".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFS0".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFS4".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFN0".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFN3".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFN1".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="ROOFN2".
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="SWOFF".
+   **   ~~~   ** Enforced reciprocity has tolerance (ideal is 0)=[5.162884E-003], Row Sum (ideal is 25)=[0.00].
+   **   ~~~   ** If zone is unusual, or tolerance is on the order of 0.001, view factors are probably OK.
+   ** Warning ** FixViewFactors: View factors not complete. Check for bad surface descriptions or unenclosed zone="LARGECONF".
+   **   ~~~   ** Enforced reciprocity has tolerance (ideal is 0)=[9.778904E-003], Row Sum (ideal is 21)=[0.00].
+   **   ~~~   ** If zone is unusual, or tolerance is on the order of 0.001, view factors are probably OK.
+   ** Severe  ** Check input.  Calc Pump Efficiency=533.33% which is bigger than 100%, for pump in radiant system NEOFF MULLION
+   ** Severe  ** Check input.  Calc Pump Efficiency=346.67% which is bigger than 100%, for pump in radiant system NWOFF MULLION
+   ** Severe  ** Check input.  Calc Pump Efficiency=231.11% which is bigger than 100%, for pump in radiant system LARGECONF MULLION
+   ** Severe  ** Check input.  Calc Pump Efficiency=533.33% which is bigger than 100%, for pump in radiant system SEOFF MULLION
+   ** Severe  ** Check input.  Calc Pump Efficiency=533.33% which is bigger than 100%, for pump in radiant system SWOFF MULLION
+   ** Warning ** Check input. Calc Pump Efficiency=21.67% which is less than 50%, for pump in radiant system NEOFF CHILLED CEILING
+   ** Warning ** Check input. Calc Pump Efficiency=21.67% which is less than 50%, for pump in radiant system CENTRAL CHILLED CEILING
+   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water SWOFF FAN COIL UNIT COOLING COIL
+   **   ~~~   ** no apparatus dew-point can be found for the initial entering and leaving conditions;
+   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
+   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
+   **   ~~~   ** The initial design conditions are: Tair,in = 23.9000
+   **   ~~~   **                                    Wair,in = 1.118000E-002
+   **   ~~~   **                                    Twater,in = 12.8000
+   **   ~~~   **                                    Tair,out = 18.0000
+   **   ~~~   **                                    Wair,out = 8.830000E-003
+   **   ~~~   ** The revised design conditions are: Tair,out = 15.4488
+   **   ~~~   **                                    Wair,out = 9.859948E-003
+   ** Warning ** In calculating the design coil UA for Coil:Cooling:Water SEOFF FAN COIL UNIT COOLING COIL
+   **   ~~~   ** no apparatus dew-point can be found for the initial entering and leaving conditions;
+   **   ~~~   ** the apparatus dew-point is below the coil design inlet water temperature;
+   **   ~~~   ** the coil outlet design conditions will be changed to correct the problem.
+   **   ~~~   ** The initial design conditions are: Tair,in = 23.9000
+   **   ~~~   **                                    Wair,in = 1.118000E-002
+   **   ~~~   **                                    Twater,in = 12.8000
+   **   ~~~   **                                    Tair,out = 18.0000
+   **   ~~~   **                                    Wair,out = 8.830000E-003
+   **   ~~~   ** The revised design conditions are: Tair,out = 15.4488
+   **   ~~~   **                                    Wair,out = 9.859948E-003
+   ************* SizeDistrictHeating: Potential issue with equipment sizing for CMU DISTRICTHEATING
+   **   ~~~   ** User-Specified Nominal Capacity of 400000.00 [W]
+   **   ~~~   ** differs from Design Size Nominal Capacity of 186347.53 [W]
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ************* SizeDistrictCooling: Potential issue with equipment sizing for CMU DISTRICTCOOLING
+   **   ~~~   ** User-Specified Nominal Capacity of 100000.00 [W]
+   **   ~~~   ** differs from Design Size Nominal Capacity of 80498.00 [W]
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ** Warning ** RoomAirManager: Inconsistent ceiling heights in Zone: ROOFS1
